@@ -1,0 +1,42 @@
+.root {
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.root > div {
+  display: flex;
+  align-items: center;
+}
+
+.root > div > input[type="checkbox"] {
+  margin-right: 1rem;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icon-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.icon-button > span {
+  display: none;
+  margin-left: 0.5rem;
+  color: var(--red);
+  font-weight: 600;
+}
+
+.icon-button:hover span {
+  display: inline;
+}
+
+.icon-button:active,
+.icon-button:focus {
+  outline: none;
+}
